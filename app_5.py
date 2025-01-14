@@ -1,3 +1,4 @@
+import streamlit as st
 from langchain_openai import OpenAIEmbeddings
 from langchain_openai import ChatOpenAI
 from langchain_community.vectorstores import AstraDB

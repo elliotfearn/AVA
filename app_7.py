@@ -10,6 +10,7 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.callbacks.base import BaseCallbackHandler
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
+from PIL import Image
 
 # Streaming call back handler for responses
 class StreamHandler(BaseCallbackHandler):
@@ -135,6 +136,16 @@ if 'messages' not in st.session_state:
 
 # Draw a title and some markdown
 st.title("Your Personal Business Assistant")
+
+# Load the logo
+logo_path = "assets/Data-Stream2.png"
+logo = Image.open(logo_path)
+
+# Display the logo in the top-right corner
+col1, col2 = st.columns([9, 1])
+with col2:
+    st.image(logo, use_column_width=True)
+
 st.markdown("""Meet your ultimate Personal Business Assistant.
 Research highlights a 40% productivity surge by automating routine tasks and streamlining workflows!""")
 

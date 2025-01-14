@@ -144,7 +144,7 @@ logo = Image.open(logo_path)
 # Display the logo in the top-right corner
 col1, col2 = st.columns([9, 1])
 with col2:
-    st.image(logo, use_column_width=True)
+    st.image(logo, use_container_width=True)
 
 st.markdown("""Meet your ultimate Personal Business Assistant.
 Research highlights a 40% productivity surge by automating routine tasks and streamlining workflows!""")

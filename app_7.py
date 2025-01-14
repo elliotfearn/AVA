@@ -103,9 +103,9 @@ if 'messages' not in st.session_state:
     st.session_state.messages = []
 
 # Draw a title and some markdown
-st.title("Your personal Efficiency Booster")
-st.markdown("""Generative AI is considered to bring the next Industrial Revolution.  
-Why? Studies show a **37% efficiency boost** in day to day work activities!""")
+st.title("Your Personal Business Assistant")
+st.markdown("""Meet your ultimate Personal Business Assistant.
+Research highlights a 40% productivity surge by automating routine tasks and streamlining workflows!""")
 
 # Include the upload form for new data to be Vectorized
 with st.sidebar:

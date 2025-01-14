@@ -134,18 +134,15 @@ retriever = load_retriever()
 if 'messages' not in st.session_state:
     st.session_state.messages = []
 
-# Draw a title and some markdown
-st.title("Your Personal Business Assistant")
-
 # Load the logo
 logo_path = "assets/Data-Stream2.png"
 logo = Image.open(logo_path)
 
-# Display the logo in the top-right corner
-col1, col2 = st.columns([9, 1])
-with col2:
-    st.image(logo, use_container_width=True)
+# Display the logo above the title
+st.image(logo, width=150)  # Adjust the width to make the image larger or smaller
 
+# Draw a title and some markdown
+st.title("Your Personal Business Assistant")
 st.markdown("""Meet your ultimate Personal Business Assistant.
 Research highlights a 40% productivity surge by automating routine tasks and streamlining workflows!""")
 

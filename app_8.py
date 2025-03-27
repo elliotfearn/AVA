@@ -103,16 +103,16 @@ if 'messages' not in st.session_state:
     st.session_state.messages = []
 
 # Load the logo
-logo_path = "assets/Data-Stream2.png"
+logo_path = "FoundationIT_logo_CMYK.png"
 logo = Image.open(logo_path)
 
 # Display the logo above the title
 st.image(logo, width=150)  # Adjust the width to make the image larger or smaller
 
 # Draw a title and some markdown
-st.title("Your Personal Business Assistant")
-st.markdown("""Meet your ultimate Personal Business Assistant.
-Research highlights a 40% productivity surge by automating routine tasks and streamlining workflows!""")
+st.title("AVA - The Virtual IT Engineer")
+st.markdown("""Meet your ultimate virtual IT Engineer.
+AVA is designed to support engineers with ticket resolution based on internal know-how, documentation and historic tickets!""")
 
 # Include the upload form for new data to be Vectorized
 with st.sidebar:
